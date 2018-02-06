@@ -8,7 +8,7 @@ from six.moves import urllib
 # https://www.kaggle.com/c/titanic/download/test.csv
 # https://www.kaggle.com/c/titanic/download/gender_submission.csv
 
-TITANIC_ROOT = "https://www.kaggle.com/c/titanic/download/"
+TITANIC_ROOT = "https://raw.githubusercontent.com/joaoavf/misc/master/titanic_raw_data/"
 TRAIN = 'train.csv'
 TEST = 'test.csv'
 GENDER_SUB = 'gender_submission.csv'
