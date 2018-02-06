@@ -34,19 +34,26 @@ def fetch_raw_data(root_url, filename, path='data/raw/'):
     # Download file from 'url' and save to disk on 'file_path'
     urllib.request.urlretrieve(url, file_path)
 
+    # Message that download was completed successfully
+    print(filename, 'download completed successfully...')
+
 
 def fetch_data_kaggle_titanic(path='data/raw/'):
     """
     Downloads all relevant raw data from Titanic dataset from Kaggle.
 
     """
+    # Started downloading message
+    print('titanic dataset download started...')
+
+    # Downloads file by file
     fetch_raw_data(TITANIC_ROOT, TRAIN, path)
     fetch_raw_data(TITANIC_ROOT, TEST, path)
     fetch_raw_data(TITANIC_ROOT, GENDER_SUB, path)
 
 
 if __name__ == '__main__':
-    # TODO find a better way to find the absolute path for 'data/raw'
+    # TODO find a better way to find the absolute path for '../data/raw'
     # Get absolute path for 'data/raw/'
     absolute_path = os.getcwd()
     parent_path = os.path.split(absolute_path)[0]
