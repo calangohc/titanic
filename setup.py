@@ -40,7 +40,7 @@ def get_package_data(package):
     return {package: filepaths}
 
 
-version = get_version('titanic')
+version = get_version('src')
 
 
 setup(
@@ -50,8 +50,8 @@ setup(
     license='MIT',
     description='Calango HC datascience titanic challenge',
     author='Calango HC',
-    packages=get_packages('titanic'),
-    package_data=get_package_data('titanic'),
+    packages=get_packages('src'),
+    package_data=get_package_data('src'),
     install_requires=[
     ],
     classifiers=[
